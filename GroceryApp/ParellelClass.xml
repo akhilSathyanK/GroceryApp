@@ -1,0 +1,34 @@
+<suite name="GroceryAppSuit" parallel="classes" thread-count="4">
+	<test name="ChromeTest" >
+		<listeners>
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="browser" value="chrome"></parameter>		
+		<classes>
+			<class name="testCases.LogInPageTest"></class>
+			<class name="testCases.HomePageTest"></class>
+			<class name="testCases.ManageLocationTest"></class>
+			<class name="testCases.ManageOrderPageTest"></class>
+			<class name="testCases.ManageProductPageTest"></class>
+			<class name="testCases.ManageUserTest"></class>
+			<class name="testCases.PushNotificationTest"></class>
+			<class name="testCases.ManageSliderTest"></class>
+		</classes>
+	</test>
+	<test name="EdgeTest" >
+		<listeners>
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="browser" value="edge"></parameter>		
+		<classes>
+			<class name="testCases.LogInPageTest"></class>
+			<class name="testCases.HomePageTest"></class>
+			<class name="testCases.ManageLocationTest"></class>
+			<class name="testCases.ManageOrderPageTest"></class>
+			<class name="testCases.ManageProductPageTest"></class>
+			<class name="testCases.ManageUserTest"></class>
+			<class name="testCases.PushNotificationTest"></class>
+			<class name="testCases.ManageSliderTest"></class>
+		</classes>
+	</test>
+</suite>

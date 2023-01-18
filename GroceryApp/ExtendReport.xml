@@ -1,0 +1,14 @@
+<suite name="GroceryAppSuit" parallel="tests" thread-count="2">
+	<test name="ChromeTest">
+		<listeners>
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.LogInPageTest"></class>
+			<class name="testCases.HomePageTest"></class>
+			<class name="testCases.ManageOrderPageTest"></class>
+		</classes>
+	</test>
+</suite>
